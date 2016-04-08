@@ -100,6 +100,7 @@ header{
 .menu{
   float: right;
   width: 66.4%;
+  margin-right: 1%;
 }
 
 .menu__link{
@@ -836,24 +837,29 @@ margin-left: 35px;
   display: block;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/*/
 
 .menu-small{
-padding-top: 34px;
+padding-top: 20px;
 width: 51%;
 margin: 0 auto;
 
 }
 
-.menu-small__item-general,
+.menu-small__item-general{
+  text-align: center;
+padding-bottom: 0px;
+padding-top: 13px;
+}
 .menu-small__item{
   text-align: center;
 padding-bottom: 0px;
-padding-top: 8px;
+padding-top: 6px;
 
 }
 .menu-small__item-general{
-  padding-top: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+
 }
 .menu-small__link:first-child{
   padding-top: 0;
@@ -869,21 +875,37 @@ padding-top: 8px;
 }
 .menu-small .menu-small__item-general:hover .dropdown {
 display: block;
+
+background: rgba(62, 49, 69, 0.9);
+
+
+box-sizing: border-box;
 }
+.menu-small__item-general:hover{
+  background: rgba(62, 49, 69, 0.9);
+  border-radius: 6px;
+  border:1px solid #101a20;
+  box-sizing: border-box;
+}
+
+
+
+
 .menu-small__item-general{
   position: relative;
 }
+
+
+
 .dropdown {
   display: none;
+  overflow: hidden;
 
-  background: rgba(74, 54, 80, 0.7);
-  border-radius: 5px;
-  border:1px solid #101a20;
-box-sizing: border-box;
+
 }
 .menu-small .menu-small__item{
-  border-top: 1px solid #523e5a;
-  border-bottom: 1px solid #36283e;
+  border-top: 2px solid #523e5a;
+  border-bottom: 2px solid #36283e;
 
 }
 .menu-small__item:hover{
@@ -892,8 +914,16 @@ box-sizing: border-box;
   background: rgba(45, 36, 50, 0.7);
 }
 .menu-small__item:last-child{
-  border-bottom: 0;
-
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-bottom: 2px none #000000;
+}
+.menu-small__item:last-child:hover{
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-bottom: 2px solid #edbfff;
 }
 
 
@@ -1060,6 +1090,7 @@ font-size: 16px;
 .brands{
   width: 480px;
   height: 232px;
+
 }
 
 .brands{
@@ -1135,7 +1166,8 @@ padding: 5.4% 0 0 0;
   width: 480px;
   height: 669px;
   padding-top: 3.5%;
-  padding-left: 5%;
+
+
 }
 
 
@@ -1174,6 +1206,8 @@ padding: 5.4% 0 0 0;
 }
 .footer1__articles{
 margin-top: 53px;
+margin-left:3.7%;
+margin-right: 2%;
 }
 .footer1__articles__text:nth-child(2){
 
@@ -1268,7 +1302,7 @@ display: block;
 
 
   .menu-small{
-  padding-top: 34px;
+  padding-top: 23px;
   width: 51%;
   margin: 0 auto;
 
@@ -1282,12 +1316,15 @@ display: block;
 
   }
   .menu-small__item-general{
-    padding-top: 0;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.0);
+
   }
   .menu-small__link:first-child{
     padding-top: 0;
     padding-bottom: 9px;
     display: block;
+
   }
 
   .menu-small__link{
@@ -1299,31 +1336,49 @@ display: block;
   .menu-small .menu-small__item-general:hover .dropdown {
   display: block;
   }
+  .menu-small .menu-small__item-general:hover{
+  background: rgba(74, 54, 80, 0.8);
+  background: rgba(62, 49, 69, 0.9);
+  border-radius: 5px;
+  border:1px solid #101a20;
+  box-sizing: border-box;
+
+}
+
+
   .menu-small__item-general{
     position: relative;
   }
   .dropdown {
     display: none;
 
-    background: rgba(74, 54, 80, 0.7);
-    border-radius: 5px;
-    border:1px solid #101a20;
   box-sizing: border-box;
   }
   .menu-small .menu-small__item{
     border-top: 1px solid #523e5a;
-    border-bottom: 1px solid #36283e;
+    border-bottom: 1px solid #37283f;
+
 
   }
   .menu-small__item:hover{
-    border-bottom: 2px solid #edbfff;
+    border-bottom: 1px solid #edbfff;
     box-sizing: border-box;
-    background: rgba(45, 36, 50, 0.7);
+    background: rgba(45, 36, 50, 0.5);
   }
+
+
   .menu-small__item:last-child{
     border-bottom: 0;
 
   }
+  .menu-small__item:last-child:hover{
+
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border-bottom: 1px solid #edbfff;
+}
+
 
 
 
@@ -1504,12 +1559,12 @@ display: block;
 
   .brands{
 
-  padding: 11.4% 0 0 0;
+  padding: 13.4% 0 0 0;
   }
 
   .brands-logo1{
     display: inline-block;
-    margin-left: 19.5%;
+    margin-left: 19.6%;
     height: 64px;
     width: 69px;
     background-image: url(../img/sprite-logo.png);
